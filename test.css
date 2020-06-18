@@ -1,0 +1,124 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+   
+   @import url('https://fonts.googleapis.com/css?family=Dokdo&display=swap');
+
+/*
+html{
+  height:100%;
+  width: 100%;
+  background: -webkit-linear-gradient(red, blue); 
+  background: -o-linear-gradient(red, blue);
+  background: -moz-linear-gradient(red, blue);
+  background: linear-gradient(red, blue); 
+}
+*/
+
+body{
+	font-family: "Dokdo";
+	font-size: 20px;
+	line-height: 1.5;
+	color: #B78383;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+  outline: 1px solid #aaa;
+  height: 100%;
+  position: relative;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  position: absolute;
+  outline: 1px solid #777;
+}
+
+section{
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(90deg, #3E23FF, #3CFF3C, #FF2362, #2DAFE6, #FF00FF, #FF8000);
+	background-size: 400% 400%;
+	position: absolute;
+	animation: change 60s ease-in-out infinite;
+}
+
+@keyframes change {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer{
+	color: #C2E6FF;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+h1, nav{
+	font-family: "Dokdo";
+	font-size: 75px;
+	font-weight: 600;
+	text-align: right;
+	margin-top: 0;
+}
+
+h2{
+	text-align: center;
+}
+
+a{
+	color:#A1D8FF;
+	text-decoration: none;
+	transition: color 0.6s;
+	
+}
+
+a:hover, .selected{
+	color: #5EB4F1;
+	
+}
+
+.handle {
+  width: 250px;
+  background: #000;
+  height: 23px;
+  margin-bottom: -3px;
+  cursor: grab;
+}
+
+iframe { 
+    overflow:hidden; 
+}
+
+/*Cursor JS*/
+.info {
+  font-family: monospace;
+  position: absolute;
+  line-height: 20px;
+  font-size: 14px;
+  left: 20px;
+  top: 20px;
+}
