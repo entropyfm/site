@@ -96,3 +96,12 @@ iframe {
   left: 20px;
   top: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+	 margin: 0;
+    height: 100vh;
+    width: 50vw;
+   
+  }
+}
